@@ -9,9 +9,8 @@ function getBooksAndMovies() {
 }
 
 const getBooksAndMoviesPromise = getBooksAndMovies();
-
-getBooksAndMoviesPromise.then((results) => {
-    console.log('getBooksAndMoviesPromise', result);
+getBooksAndMoviesPromise().then(results => {
+    console.log("getBooksAndMoviesPromise", results);
 });
 
 function getBooksOrMovies() {
@@ -20,7 +19,6 @@ function getBooksOrMovies() {
 }
 
 const getBooksOrMoviesPromise = getBooksOrMovies();
-
-getBooksOrMoviesPromise.then((results) => {
-    console.log('getBooksOrMoviesPromise', result);
+getBooksOrMoviesPromise().then(results => {
+    console.log("getBooksOrMoviesPromise", results);
 }); 
